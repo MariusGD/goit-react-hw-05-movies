@@ -1,0 +1,84 @@
+.MovieContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .MovieContainer {
+    flex-direction: row;
+  }
+}
+
+.BackLink,
+.LinkInfo {
+  display: block;
+  width: 90px;
+  text-align: center;
+  margin: 15px;
+  padding: 5px 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.BackLink:hover,
+.LinkInfo:hover {
+  background-color: #d2ecf3;
+  font-weight: 500;
+}
+
+.LinkInfo {
+  padding: 5px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .LinkInfo {
+    margin: 15px;
+  }
+}
+
+.List {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .List {
+    justify-content: flex-start;
+  }
+}
+
+.Img {
+  border-radius: 5px;
+  width: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .Img {
+    min-width: 30px;
+  }
+}
+
+.ImgWrp,
+.InfoWrp,
+.AdditionalWrp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+
+.AdditionalWrp {
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .AdditionalWrp {
+    padding-left: 0;
+  }
+}

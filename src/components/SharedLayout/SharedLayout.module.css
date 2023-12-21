@@ -1,0 +1,78 @@
+.StyledNavLink {
+  display: flex;
+  align-items: center;
+  height: 30px; /* Înălțime mai mare */
+  gap: 50px; /* Distanțare mai mare între elemente */
+  color: rgb(223, 14, 14);
+  background-color: #e8edee;
+  text-decoration: none;
+  font-size: larger; /* Mărime de font mai mare */
+  padding: 10px 25px; /* Padding mai mare */
+  border-radius: 5px;
+  transition: transform 0.2s;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.StyledNavLink:last-child {
+  margin-left: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .StyledNavLink {
+    gap: 20px; /* Distanțare mai mare pe ecrane mari */
+    padding: 10px 30px; /* Padding mai mare pe ecrane mari */
+    font-size: x-large; /* Mărime de font mai mare pe ecrane mari */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.StyledNavLink:active {
+  color: red;
+  border: 2px solid #f38181;
+}
+
+.StyledNavLink:hover {
+  transform: scale(1.1);
+}
+
+.Header {
+  margin: 0 auto;
+  height: 80px;
+  background: yellowgreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .Header {
+    border-radius: 5px;
+  }
+}
+
+.Navigation {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .Navigation {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .Container {
+    display: block;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+}
